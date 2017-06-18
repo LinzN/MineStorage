@@ -76,5 +76,6 @@ public class MineStoragePlugin extends JavaPlugin{
             this.getServer().getScheduler().runTaskAsynchronously(this, new SYS_Create_Commands_Task(this, commandHandler));
             getCommand("ms").setExecutor(commandHandler);
         }
+        Metrics metrics = new Metrics(this);
     }
 
