@@ -23,13 +23,13 @@ import de.sql.jdbc.ConnectionManager;
  * 
  */
 
-public class MSClass extends JavaPlugin{
-    private static MSClass inst;
+public class MineStoragePlugin extends JavaPlugin{
+    private static MineStoragePlugin inst;
     public PluginDescriptionFile pdf;
     private SYS_MS_Config  rkconfig;
     private CMD_Command_Provider commandHandler;
 
-    public static MSClass inst() {
+    public static MineStoragePlugin inst() {
         return inst;
     }
 

@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import de.linzn.mineStorage.CMD_Command_Provider;
-import de.linzn.mineStorage.MSClass;
+import de.linzn.mineStorage.MineStoragePlugin;
 import de.linzn.mineStorage.SYS_I18n;
 import de.sql.jdbc.ConnectionManager;
 
@@ -144,8 +144,8 @@ public abstract class SYS_Command_API {
           int DBexp = this.getDBUUIDExp(uuid);
           int DATAexp = this.getDATAExp(p);
           int addDBexp = DBexp + amount;
-          if (addDBexp >= (MSClass.inst().getMSClassConfig().limit + 1)){
-              p.sendMessage(SYS_I18n.translate("messages.limit", MSClass.inst().getMSClassConfig().limit));
+          if (addDBexp >= (MineStoragePlugin.inst().getMSClassConfig().limit + 1)){
+              p.sendMessage(SYS_I18n.translate("messages.limit", MineStoragePlugin.inst().getMSClassConfig().limit));
               return;
           }
           int delDATAexp = DATAexp - amount;
@@ -233,8 +233,8 @@ public abstract class SYS_Command_API {
           int DBexpTo = this.getDBUUIDExp(to);
           int addDBexpTo = DBexpTo + amount;
           int delDBexpFrom = DBexpFrom - amount;
-          if (addDBexpTo >= (MSClass.inst().getMSClassConfig().limit + 1)){
-              sender.sendMessage(SYS_I18n.translate("messages.limitother", arg, MSClass.inst().getMSClassConfig().limit));
+          if (addDBexpTo >= (MineStoragePlugin.inst().getMSClassConfig().limit + 1)){
+              sender.sendMessage(SYS_I18n.translate("messages.limitother", arg, MineStoragePlugin.inst().getMSClassConfig().limit));
               return;
           }
           if (delDBexpFrom < 0){

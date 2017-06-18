@@ -1,7 +1,7 @@
 package de.linzn.mineStorage.sys;
 
 import de.linzn.mineStorage.CMD_Command_Provider;
-import de.linzn.mineStorage.MSClass;
+import de.linzn.mineStorage.MineStoragePlugin;
 
 
 /**
@@ -17,12 +17,12 @@ import de.linzn.mineStorage.MSClass;
 
 public class SYS_Create_Commands_Task implements Runnable {
 
-    private MSClass       msclass;
+    private MineStoragePlugin       msclass;
     private SYS_MS_Config msclassConfig;
 
     private CMD_Command_Provider   handler;
 
-    public SYS_Create_Commands_Task(MSClass msclass, CMD_Command_Provider handler) {
+    public SYS_Create_Commands_Task(MineStoragePlugin msclass, CMD_Command_Provider handler) {
         this.msclass = msclass;
         this.msclassConfig = msclass.getMSClassConfig();
 

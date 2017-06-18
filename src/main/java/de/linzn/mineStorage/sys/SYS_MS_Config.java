@@ -4,7 +4,7 @@ import java.util.Set;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
-import de.linzn.mineStorage.MSClass;
+import de.linzn.mineStorage.MineStoragePlugin;
 
 
 /**
@@ -27,7 +27,7 @@ public class SYS_MS_Config {
     public boolean             loaded                = false;
     
 
-    public SYS_MS_Config(final MSClass msclass) {
+    public SYS_MS_Config(final MineStoragePlugin msclass) {
 
 
         msclass.getServer().getScheduler().runTaskAsynchronously(msclass, new Runnable() {

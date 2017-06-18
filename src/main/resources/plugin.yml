@@ -2,7 +2,7 @@ name: MineStorage
 version: ${project.version}
 description: MineStorage EXP Bank
 author: Kekshaus
-main: de.kekshaus.plugins.minestorage.MSClass
+main: de.linzn.mineStorage.MineStoragePlugin
 commands:
    ms:
       description: Alle MS Befehle

@@ -38,18 +38,18 @@ public class CMD_Command_Provider implements CommandExecutor {
     public boolean isInitialized() {
         return initialized;
     }
-    private MSClass msclass;
+    private MineStoragePlugin msclass;
     public ThreadPoolExecutor executorServiceCommands;
     public ThreadPoolExecutor executorServiceRegions;
 
     
-    public CMD_Command_Provider(final MSClass msclass) {
+    public CMD_Command_Provider(final MineStoragePlugin msclass) {
         this.msclass = msclass;
         executorServiceCommands = new ThreadPoolExecutor(1, 1, 250L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
         executorServiceRegions = new ThreadPoolExecutor(1, 1, 120L, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>());
     }
 
-    public MSClass getMSInstance() {
+    public MineStoragePlugin getMSInstance() {
         return this.msclass;
     }
 

@@ -1,6 +1,6 @@
 package de.linzn.mineStorage.sys;
 
-import de.linzn.mineStorage.MSClass;
+import de.linzn.mineStorage.MineStoragePlugin;
 import de.linzn.mineStorage.SYS_I18n;
 
 
@@ -17,10 +17,10 @@ import de.linzn.mineStorage.SYS_I18n;
 
 public class SYS_Create_Translations_Task implements Runnable {
 
-    private MSClass       msclass;
+    private MineStoragePlugin       msclass;
     private SYS_MS_Config msclassConfig;
 
-    public SYS_Create_Translations_Task(MSClass msclass) {
+    public SYS_Create_Translations_Task(MineStoragePlugin msclass) {
         this.msclass = msclass;
         this.msclassConfig = msclass.getMSClassConfig();
     }
