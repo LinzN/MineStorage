@@ -1,0 +1,6 @@
+Plugin:
+  locale: deDE
+  limit: 6000
+  database: jdbc:mysql://127.0.0.1:3306/database
+  username: username
+  password: password

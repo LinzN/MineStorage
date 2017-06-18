@@ -1,0 +1,40 @@
+#### Benutze ein Doppelt-Einfaches-Apostroph("'") um keine Fehler in der Sprachdatei zu verursachen ####
+messages:
+  noPermission: '§cDu hast dafür nicht die Berechtigung!'
+  noCommand: 'Unbekannter Befehl! Hilfeseite: /ms help'
+  notNegativOrNull: 'Die Erfahrungspunkte-Menge darf nicht Null oder negativ sein!'
+  notNumber: 'Die ist keine gültige Zahl!'
+  notCorrectType: 'Dies ist keine gültige Eingabe!'
+  notPaySelf: 'Du kannst keine Erfahrungspunkte an dich selbst senden!'
+  notEnoughtEXP: 'Du besitzt nicht so viele Erfahrungspunkte auf deinem SpielerProfil!'
+  notEnoughtEXPDB: 'Du besitzt nicht so viele Erfahrungspunkte auf deinem MSAccount!'
+  notMojangAccount: 'Dieser Spieler ist nicht bei Mojang registriert! (Achte auf Gross und Kleinschreibung)'
+  limit: 'Dies würde dein Limit von %s Exp überschreiten!'
+  limitother: 'Dies würde %s Limit von %s Exp überschreiten!'
+action:
+  add: '§aDu hast §e%s §aErfahtungspunkte dem MSAccount hinzugefügt!'
+  take: '§aDu hast §e%s §aErfahtungspunkte dem MSAccount entnommen!'
+  pay: '§aDu hast §e%s §e%s §aErfahrungspunkte zugesendet!'
+  set: '§aDu hast §e%s §aMSAccount auf §e%s §aErfahrungspunkte gesetzt!'
+interfaceAccount:
+  title1: '§aDeine Erfahrungspunkte:§e'
+  title2: '§aSpielerProfil: §e%s'
+  title3: '§aMSAccount: §e%s'
+interfaceAccountOther:
+  title1: '§e%s§a Erfahrungspunkte:'
+  title2: '§aMSAccount: §e%s'
+interfaceHelp1:
+  title1: '§e-==============[§aMineStorage§e]==============-'
+  title2: ' §aDeine Erfahrungspunkte anzeigen: /ms account'
+  title3: ' §aMehr Befehle auf den folgenden Seiten:'
+  title4: ' §aSeite 2: Deine Erfahrungspunkte verwalten /ms help 2'
+interfaceHelp2:
+  title1: '§aBefehle um Erfahrungspunkte zu verwalten: (Seite 2)'
+  title2: ' §aEXP einzahlen: /ms add <Erfahrungspunkte>'
+  title3: ' §aEXP auszahlen: /ms take <Erfahrungspunkte>'
+  title4: ' §aEXP versenden: /ms pay <Spieler> <Erfahrungspunkte>'
+  title5: '§aZurück auf Seite 1 mit /ms help 1'
+interfaceAdmin1:
+  title1: '§e-===========[§aMineStorage-Admin§e]===========-'
+  title2: ' §aEXP anzeigen: /ms account <Spieler>'
+  title3: ' §aEXP setzen: /ms set <Spieler> <Erfahrungspunkte>'

@@ -1,0 +1,65 @@
+name: MineStorage
+version: ${project.version}
+description: MineStorage EXP Bank
+author: Kekshaus
+main: de.kekshaus.plugins.minestorage.MSClass
+commands:
+   ms:
+      description: Alle MS Befehle
+      usage: /<command>
+permissions:
+    minestorage.admin:
+        description: Alle Permissions
+        children:
+            minestorage.user: true
+            minestorage.tools: true
+            minestorage.admin.cmd.set: true
+            minestorage.admin.cmd.accountother: true
+            minestorage.admin.cmd.help: true
+    minestorage.user:
+        description: Alle Permissions
+        children:
+            minestorage.cmd.add: true
+            minestorage.cmd.take: true
+            minestorage.cmd.pay: true
+            minestorage.cmd.help: true
+            minestorage.cmd.account: true
+    minestorage.tools:
+        description: Alle Permissions
+        children:
+            minestorage.tool.cmd.wb: true
+            minestorage.tool.cmd.ec: true
+            minestorage.tool.cmd.et: true
+    minestorage.cmd.add:
+        description: add exp
+        default: op
+    minestorage.cmd.take:
+        description: take exp
+        default: op
+    minestorage.cmd.pay:
+        description: pay exp
+        default: op
+    minestorage.cmd.help:
+        description: help
+        default: op
+    minestorage.cmd.account:
+        description: show stats
+        default: op
+    minestorage.admin.cmd.set:
+        description: Set exp
+        default: op
+    minestorage.admin.cmd.accountother:
+        description: show other exp
+        default: op
+    minestorage.admin.cmd.help:
+        description: show admin help
+        default: op
+    minestorage.tool.cmd.wb:
+        description: Open Workbench
+        default: op
+    minestorage.tool.cmd.ec:
+        description: Open Enderchest
+        default: op
+    minestorage.tool.cmd.et:
+        description: Open EnchantTable
+        default: op
