@@ -16,7 +16,7 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.12-R0.1-SNAPSHOT</version>
+			<version>1.13-pre7-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -57,7 +57,7 @@
 		</plugins>
 	</build>
 	<artifactId>mineStorage</artifactId>
-	<version>1.0.1-${build.number}</version>
+	<version>1.1.0-${build.number}</version>
 	<groupId>de.linzn</groupId>
 	<dependencyManagement>
 		<dependencies>
