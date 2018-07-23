@@ -3,6 +3,7 @@ version: ${project.version}
 description: MineStorage EXP Bank
 author: Kekshaus
 main: de.linzn.mineStorage.MineStoragePlugin
+api-version: 1.13
 commands:
    ms:
       description: Alle MS Befehle
